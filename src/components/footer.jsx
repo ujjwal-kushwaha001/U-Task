@@ -2,6 +2,7 @@ import React from 'react'
 import react from '../assets/1611079.png'
 import tailwind from '../assets/Tailwind_CSS_Logo.svg.png'
 import '../App.css'
+import '../index.css'
 
 const footer = () => {
   return (

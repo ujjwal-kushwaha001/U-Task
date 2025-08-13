@@ -3,9 +3,13 @@
 
 @theme {
   --breakpoint-mobile: 375px;
+  
 }
 
 body{
+  font-family: "Libertinus Serif", serif;
+  font-weight: 400;
+  font-style: normal;
     background-color: rgb(36, 33, 33);
 }
 

@@ -81,7 +81,7 @@ const todo = () => {
   // useEffect(()=>{},[saveToLS()])
 
   return (
-    <div className='todo-container bg-violet-200 mx-auto my-10 w-[90vw] min-h-[750px] rounded-lg px-3 py-5'>
+    <div className='todo-container bg-violet-200 mx-auto my-10 w-[70vw] min-h-[750px] rounded-lg px-3 py-5 max-[700px]:w-[90vw]'>
       <div className="header-title text-2xl font-medium text-center">U Task - Manage Your All Todos in One Place</div>
         <h1 className='text-[20px] font-bold mt-5 ml-3'>Add a Todo</h1> 
       <div className="title-addTodo flex justify-center items-center ml-2.5 max-[450px]:flex-col">

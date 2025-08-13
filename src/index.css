@@ -1,6 +1,12 @@
 
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-mobile: 375px;
+}
+
 body{
     background-color: rgb(36, 33, 33);
 }
+
+

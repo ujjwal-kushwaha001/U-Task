@@ -80,12 +80,12 @@ const todo = () => {
   // useEffect(()=>{},[saveToLS()])
 
   return (
-    <div className='todo-container bg-violet-200 mx-auto my-10 w-[620px] min-h-[750px] rounded-lg px-3 py-5'>
+    <div className='todo-container bg-violet-200 mx-auto my-10 w-[90vw] min-h-[750px] rounded-lg px-3 py-5'>
       <div className="header-title text-2xl font-medium text-center">U Task - Manage Your All Todos in One Place</div>
         <h1 className='text-[20px] font-bold mt-5 ml-3'>Add a Todo</h1> 
-      <div className="title-addTodo flex items-center ml-2.5">
-       <input onChange={handleChange} value={todo} className='todo-input w-[80%] h-[30px] rounded-full px-3 bg-white outline-0 mt-2' type="text"/>
-       <div onClick={addTodo} className="save-todo flex items-center justify-center w-[13%] h-[32px] rounded-full mt-2 mx-2 px-3 text-white bg-purple-500 cursor-pointer text-center ">Save</div>
+      <div className="title-addTodo flex justify-center items-center ml-2.5 max-[450px]:flex-col">
+       <input onChange={handleChange} value={todo} className='todo-input w-[80%] h-[30px] rounded-full px-3 bg-white outline-0 mt-2 max-[450px]:w-[100%]' type="text"/>
+       <div onClick={addTodo} className="save-todo flex items-center justify-center w-[13%] h-[32px] rounded-full mt-2 mx-2 px-3 text-white bg-purple-500 cursor-pointer text-center max-[450px]:w-[30vw]">Save</div>
       </div>
       {/* <div className="finished-checkbox flex items-center gap-1.5 pt-4.5 pl-3.5">
         <input type="checkbox"/>

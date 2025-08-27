@@ -7,24 +7,17 @@ const todo = () => {
 
   const [todos, setTodos] = useState([]);
   const [todo, settodo] = useState('')
-
   
-  useEffect(() => {
-    let todosString = localStorage.getItem("Todos-item")
-    
-    if(todosString){
-      let todos = JSON.parse(localStorage.getItem("Todos-item"))
-      console.log(todos);
-      
-      setTodos(todos)
-    }
+    useEffect(() => {
+      let toodos = JSON.parse(localStorage.getItem('Todos-item'));
+        setTodos(toodos)
   }, [])
 
 
-  
- const saveToLS = ()=>{
-    localStorage.setItem("Todos-item",JSON.stringify(todos))
-  }
+  const saveToLS = ()=>{
+       localStorage.setItem("Todos-item",JSON.stringify(todos))
+     }
+
 
 
 
@@ -77,8 +70,6 @@ const todo = () => {
     saveToLS()
   }
   
-
-  // useEffect(()=>{},[saveToLS()])
 
   return (
     <div className='todo-container bg-violet-200 mx-auto my-10 w-[70vw] min-h-[750px] rounded-lg px-3 py-5 max-[700px]:w-[90vw]'>
